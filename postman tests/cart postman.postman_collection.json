@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "3339ba4c-343a-4a9d-8508-345c5afdbdb6",
+		"name": "cart postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cart C",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"carts\": {\"user_id\": \"3\"}}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/carts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carts"
+					]
+				},
+				"description": "post request (create)"
+			},
+			"response": []
+		},
+		{
+			"name": "cart R (all)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/carts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carts"
+					]
+				},
+				"description": "post request (create)"
+			},
+			"response": []
+		},
+		{
+			"name": "cart R (one)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/carts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carts",
+						"1"
+					]
+				},
+				"description": "post request (create)"
+			},
+			"response": []
+		},
+		{
+			"name": "cart U",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"cart\": {\"user_id\": \"5\"}}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/carts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carts",
+						"1"
+					]
+				},
+				"description": "post request (create)"
+			},
+			"response": []
+		},
+		{
+			"name": "cart D",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/carts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carts",
+						"1"
+					]
+				},
+				"description": "post request (create)"
+			},
+			"response": []
+		}
+	]
+}
