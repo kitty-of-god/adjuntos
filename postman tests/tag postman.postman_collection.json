@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "3b749ee1-4c2f-44f2-94fd-506e38ee735f",
+		"name": "tag postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tag C",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"tags\": {\"name\": \"testtagname\"}}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tags"
+					]
+				},
+				"description": "post request (create)"
+			},
+			"response": []
+		},
+		{
+			"name": "tag R (all)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tags"
+					]
+				},
+				"description": "post request (create)"
+			},
+			"response": []
+		},
+		{
+			"name": "tag R (one)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tags/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tags",
+						"1"
+					]
+				},
+				"description": "post request (create)"
+			},
+			"response": []
+		},
+		{
+			"name": "tag U",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"tag\": {\"name\": \"anothertesttagname\"}}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/tags/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tags",
+						"1"
+					]
+				},
+				"description": "post request (create)"
+			},
+			"response": []
+		},
+		{
+			"name": "tag D",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tags/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tags",
+						"1"
+					]
+				},
+				"description": "post request (create)"
+			},
+			"response": []
+		}
+	]
+}
